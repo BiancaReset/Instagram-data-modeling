@@ -12,6 +12,7 @@ class User(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String(250), nullable=False)
     lastname = Column(String(250), nullable=False)
+    age = Column(Integer, nullable= False)
     email = Column(String, nullable=False, unique=True)
     reply = relationship("Reply")
 
